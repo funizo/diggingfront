@@ -11,7 +11,7 @@ function Manager() {
     // 서버에서 사용자 정보를 가져오는 함수
     async function fetchUserInfo() {
       try {
-        const response = await fetch("http://localhost:8080/manager/userInfo");
+        const response = await fetch("https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/manager/userInfo");
         if (response.ok) {
           const data = await response.json();
           setUserInfo(data);
@@ -35,7 +35,7 @@ function Manager() {
   const handleSaveClick = async (userId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/manager/userInfo/${userId}`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/manager/userInfo/${userId}`,
         {
           method: "PATCH",
           headers: {

@@ -33,7 +33,7 @@ const BoardEdit = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/board_edit/${postId}`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board_edit/${postId}`,
         {
           method: "PUT",
           headers: {

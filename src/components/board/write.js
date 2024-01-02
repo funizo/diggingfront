@@ -67,7 +67,7 @@ const Write = ({ onPostSubmit }) => {
 
     const numericViews = parseInt(boardData.views);
     try {
-      const res = await fetch("http://localhost:8080/board", {
+      const res = await fetch("https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -56,7 +56,7 @@ function ContentRegister(props) {
         formData.append("address", userInfo.address);
         formData.append("date", "");
         const res = await fetch(
-          `http://localhost:8080/register/${
+          `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/register/${
             selectedTag ? selectedTag.value : ""
           }`,
           {

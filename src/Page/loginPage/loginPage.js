@@ -17,7 +17,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const result = await fetch("http://localhost:8080/login", {
+      const result = await fetch("https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

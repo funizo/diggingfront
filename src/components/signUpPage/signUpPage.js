@@ -29,7 +29,7 @@ const SignUpPage = () => {
       setError("비밀번호가 일치하지 않습니다.");
     } else {
       try {
-        const res = await fetch("http://localhost:8080/signup", {
+        const res = await fetch("https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/signup", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

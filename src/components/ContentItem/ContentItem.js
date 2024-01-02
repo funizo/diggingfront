@@ -77,7 +77,7 @@ function ContentItem(props) {
     } else {
       try {
         const res = await fetch(
-          `http://localhost:8080/${props.Category}/search?val=${searchData}`
+          `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/${props.Category}/search?val=${searchData}`
         );
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);

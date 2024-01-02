@@ -65,7 +65,7 @@ function ToolBar(props) {
       console.log("fetchAlerts호출");
       console.log(userInfo);
       const response = await fetch(
-        `http://localhost:8080/manager/alerts/${userInfo.id}`
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/manager/alerts/${userInfo.id}`
       );
       console.log(response);
       if (response.ok) {

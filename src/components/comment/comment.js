@@ -26,7 +26,7 @@ function Comment(props) {
   const handleCommentSubmit = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/board_detail/${postId}`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board_detail/${postId}`,
         {
           method: "POST",
           headers: {

@@ -25,7 +25,7 @@ function BoardDetail() {
     try {
       console.log("handle-postId", postId);
       const response = await fetch(
-        `http://localhost:8080/board_detail/${postId}`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board_detail/${postId}`,
         {
           method: "DELETE",
           headers: {
@@ -59,7 +59,7 @@ function BoardDetail() {
     // get 요청 해서 받아오는 부분
     try {
       const response = await fetch(
-        `http://localhost:8080/board_detail/${postId}`
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board_detail/${postId}`
       );
       if (response.ok) {
         const data = await response.json();

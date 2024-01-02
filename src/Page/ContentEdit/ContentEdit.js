@@ -47,7 +47,7 @@ function ContentEdit(props) {
         formData.append("_id", writeData._id);
         formData.append("username", userInfo.username);
         const res = await fetch(
-          `http://localhost:8080/edit/${props.Category}`,
+          `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/edit/${props.Category}`,
           {
             method: "POST",
             body: formData,

@@ -20,7 +20,7 @@ function Board() {
   const fetchData = async (pageNumber, selectedTag) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/board?&page=${pageNumber}&tag=${selectedTag}`
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board?&page=${pageNumber}&tag=${selectedTag}`
       );
       if (!response.ok) {
         throw new Error("서버 응답 에러");
@@ -62,7 +62,7 @@ function Board() {
   const handleSearchButtonClick = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/board?searchTerm=${searchTerm}`
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board?searchTerm=${searchTerm}`
       );
       if (!response.ok) {
         throw new Error("서버 응답 에러");
@@ -77,7 +77,7 @@ function Board() {
   const handlePostClick = async (postId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/board_detail/${postId}`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board_detail/${postId}`,
         {
           method: "POST",
           headers: {

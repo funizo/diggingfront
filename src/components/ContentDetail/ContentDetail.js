@@ -26,7 +26,7 @@ function ContentDetail(props) {
   console.log("contentData", contentData);
   useEffect(() => {
     const fetchData = async () => {
-      const url = `http://localhost:8080/categoryComment?category=${props.Category}&id=${contentData._id}`;
+      const url = `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/categoryComment?category=${props.Category}&id=${contentData._id}`;
       try {
         const res = await fetch(url);
         if (!res.ok) {
@@ -46,7 +46,7 @@ function ContentDetail(props) {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/category/${props.Category}/detail`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/category/${props.Category}/detail`,
         {
           method: "DELETE",
           headers: {
@@ -82,7 +82,7 @@ function ContentDetail(props) {
         loginId: userInfo.id,
         comment: comment,
       };
-      const response = await fetch("http://localhost:8080/comment?", {
+      const response = await fetch("https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/comment?", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -105,7 +105,7 @@ function ContentDetail(props) {
     try {
       const id = e.target.value;
       const response = await fetch(
-        `http://localhost:8080/commentdelete?id=${id}`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/commentdelete?id=${id}`,
         {
           method: "DELETE",
         }

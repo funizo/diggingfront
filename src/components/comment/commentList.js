@@ -15,7 +15,7 @@ function CommentList(props) {
   const handleDeleteComment = async (commentId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/board_detail/${postId}`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board_detail/${postId}`,
         {
           method: "DELETE",
           headers: {
@@ -51,7 +51,7 @@ function CommentList(props) {
     // replyContent를 서버에 전송하고, 댓글 목록을 갱신
     try {
       const response = await fetch(
-        `http://localhost:8080/board_detail/${postId}`,
+        `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/board_detail/${postId}`,
         {
           method: "POST",
           headers: {
