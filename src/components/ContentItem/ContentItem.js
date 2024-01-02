@@ -35,7 +35,7 @@ function ContentItem(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = `http://localhost:8080/category/${props.Category}`;
+      const url = `https://port-0-diggingserver-wr4oe2alqrvinum.sel5.cloudtype.app/category/${props.Category}`;
       try {
         const res = await fetch(url);
         if (!res.ok) {
